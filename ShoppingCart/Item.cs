@@ -29,7 +29,8 @@ namespace ShoppingCart
             get { return _price; }
             set
             {
-                if 
+                if (value < 0)
+                    throw new Exception("Price cannot be negative");
                 _price = value;
             }
         }
