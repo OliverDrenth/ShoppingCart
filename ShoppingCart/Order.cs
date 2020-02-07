@@ -8,6 +8,7 @@ namespace ShoppingCart
     {
         enum Status { Received, InProgress, Delivered}
         public DateTime Date { get; set; }
+        public List<Item> ItemList { get; internal set; }
 
         Item Items = new Item();
 
