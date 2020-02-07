@@ -6,7 +6,12 @@ namespace ShoppingCart
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+        }
+        public Order GetOrder()
+        {
+            Order _order = new Order { Date = DateTime.Now, ItemList = new List<Item>() };
+            return _order;
         }
     }
 }
