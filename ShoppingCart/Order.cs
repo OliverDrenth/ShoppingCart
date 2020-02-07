@@ -15,10 +15,11 @@ namespace ShoppingCart
         private double _total;
         public double CalculateTotal() 
         {
-            for (int i = 0; i < ItemsList.length; i++)
+            for (int i = 0; i < ItemList.Count; i++)
             {
-
+                _total = _total + ItemList[i].Price;
             }
+            return _total;
         }
     }
 }
